@@ -20,7 +20,8 @@
     "saga",
     "event bus",
     "mobx",
-    "redux"
+    "redux",
+    "redux-saga"
   ],
   "author": "InterAl",
   "license": "MIT",

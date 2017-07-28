@@ -25,20 +25,23 @@ export function createSaga() {
         },
 
         dispatch(action: Action): void {
-            if (!action.type)
+            const type = action.type;
+            if (!type)
                 throw new Error(`Cannot dispatch a typeless action`);
 
-            const typeHandlers = handlers[action.type];
+            const typeHandlers = handlers[type];
 
             if (typeHandlers) {
                 typeHandlers.forEach(h => setTimeout(() => h(action), 0));
             }
 
-            const takes = pendingTakes[action.type];
+            const takes = pendingTakes[type];
 
             if (takes) {
                 takes.forEach(t => setTimeout(() => t(action), 0));
             }
+
+            pendingTakes[type] = [];
         }
     };
 }

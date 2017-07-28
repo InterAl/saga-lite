@@ -30,7 +30,7 @@ describe('saga-lite', () => {
         }, 1000);
     });
 
-    it('handler can take (wait for) an event', () => {
+    it('handler can take (wait for) an action', () => {
         //Given
         const {dispatch, handle, take} = createSaga();
 
