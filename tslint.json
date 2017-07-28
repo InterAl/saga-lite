@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "tslint-config-wix"
+  ],
+  "rules": {
+    "no-invalid-this": false,
+    "only-arrow-functions": false,
+    "quotemark": false,
+    "typedef-whitespace": false,
+    "whitespace": false,
+    "object-curly-spacing": false,
+    "no-console": false
+  }
+}

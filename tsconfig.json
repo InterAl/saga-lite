@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": false,
+        "noImplicitAny": false,
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es5",
+        "noUnusedLocals": false,
+        "lib": ["es2016"],
+        "types": ["mocha", "chai", "node"]
+    },
+    "files": [
+        "./src/index.ts"
+    ]
+}
