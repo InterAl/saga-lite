@@ -1,6 +1,6 @@
 {
   "name": "saga-lite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple event bus inspired by redux-saga. Framework agnostic.",
   "main": "dist/index.js",
   "directories": {
