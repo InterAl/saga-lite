@@ -12,7 +12,6 @@
         "types": ["mocha", "chai", "node"]
     },
     "files": [
-        "./src/index.ts",
-        "./src/index.d.ts"
+        "./src/index.ts"
     ]
 }

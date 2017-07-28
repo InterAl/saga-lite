@@ -1,4 +1,5 @@
 "use strict";
+///<reference path="../index.d.ts"/>
 Object.defineProperty(exports, "__esModule", { value: true });
 function createSaga() {
     var handlers = {};

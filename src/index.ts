@@ -1,3 +1,5 @@
+///<reference path="../index.d.ts"/>
+
 export function createSaga() {
     const handlers: {[key: string]: Handler[]} = {};
     const pendingTakes: {[key: string]: ((action: Action) => void)[]} = {};
@@ -44,13 +46,4 @@ export function createSaga() {
             pendingTakes[type] = [];
         }
     };
-}
-
-export interface Handler {
-    (action: Action): void;
-}
-
-export interface Action {
-    type: string;
-    [x: string]: any
 }
